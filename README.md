@@ -14,10 +14,13 @@ https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-12.1.0-amd64-ne
 каталоге пользователя super-{ФИО}
 8. Продемонстрировать работу механизмов разграничения доступа.
 # Шаги выполнения 
-1 Шаг ![Снимок1](https://github.com/SCEMU/TOIB2/assets/71563287/f3035393-8e68-4070-bd0f-93f4423f5b9c)
+1 Шаг 
+![Снимок4](https://github.com/SCEMU/TOIB2/assets/71563287/339a3327-20a0-4fdf-9048-7bab897061ab)
+
+
 
 2 Шаг
-![Снимок2](https://github.com/SCEMU/TOIB2/assets/71563287/8d4ba685-cf9a-4c13-89ad-c23754429309)
+![Снимок1](https://github.com/SCEMU/TOIB2/assets/71563287/f3035393-8e68-4070-bd0f-93f4423f5b9c)
 
 nikita@debian:~$ su
 
@@ -44,7 +47,7 @@ root@debian:/home/nikita# sudo groupadd group-{1}
 4 Шаг
 
 root@debian:/home/nikita# sudo usermod -aG group-{1} super-{SidorenkovND}
-
+![Снимок2](https://github.com/SCEMU/TOIB2/assets/71563287/8d4ba685-cf9a-4c13-89ad-c23754429309)
 
 5 Шаг
 
@@ -53,7 +56,7 @@ root@debian:/home/nikita# id super-{SidorenkovND}
 uid=1002(super-{SidorenkovND}) gid=1002(super-{SidorenkovND}) группы=1002(super-{SidorenkovND
 }),27(sudo), 1003(group-{1})
 
-![Снимок3](https://github.com/SCEMU/TOIB2/assets/71563287/f74256bd-a446-4d57-b8e7-e41ba0af4955)
+
 
 
 6 Шаг
@@ -99,5 +102,5 @@ user_nikita@debian:/home/super-{SidorenkovND}$ ls
 
 test_file.txt
 
-![Снимок4](https://github.com/SCEMU/TOIB2/assets/71563287/339a3327-20a0-4fdf-9048-7bab897061ab)
+![Снимок3](https://github.com/SCEMU/TOIB2/assets/71563287/f74256bd-a446-4d57-b8e7-e41ba0af4955)
 
